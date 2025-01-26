@@ -1,3 +1,5 @@
+package java_practice.exception;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;

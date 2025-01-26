@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.exception;
 
 public class Student {
     private String name;

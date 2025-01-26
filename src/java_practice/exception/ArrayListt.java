@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.exception;
 import java.util.ArrayList;
 
 public class ArrayListt

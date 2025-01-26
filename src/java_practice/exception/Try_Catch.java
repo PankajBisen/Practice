@@ -1,3 +1,5 @@
+package java_practice.exception;
+
 public class Try_Catch {
     public static void main(String[] args) {
         try {                   //write risky code

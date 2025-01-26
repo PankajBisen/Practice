@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.exception;
 
 import java.util.HashSet;
 import java.util.Iterator;

@@ -1,3 +1,5 @@
+package java_practice.exception;
+
 import java.util.Scanner;
 
 public class Throw

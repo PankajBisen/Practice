@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.exception;
 
 public class Association {
     public void red()

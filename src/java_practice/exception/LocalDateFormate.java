@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.exception;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
