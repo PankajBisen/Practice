@@ -1,7 +1,6 @@
 package javaPractice.string;
 
 public class CheckIfStringContainsBalancedParentheses {
-    public class BalancedParentheses {
         public static boolean isBalanced(String str) {
             int balance = 0;
             for (int i = 0; i < str.length(); i++) {
@@ -22,6 +21,4 @@ public class CheckIfStringContainsBalancedParentheses {
             System.out.println(isBalanced("(())")); // Output: true
             System.out.println(isBalanced("(()"));  // Output: false
         }
-    }
-
 }

@@ -1,7 +1,7 @@
 package javaPractice.string;
 
 public class FindFirstNonRepeatingCharacter {
-    public char firstNonRepeatingChar(String str) {
+    public static char firstNonRepeatingChar(String str) {
         int[] charCount = new int[256];
 
         for (int i = 0; i < str.length(); i++) {
@@ -17,24 +17,23 @@ public class FindFirstNonRepeatingCharacter {
     }
 
 
-    public class FirstNonRepeatingChar {
-        public static char firstNonRepeating(String str) {
-            int[] charCount = new int[256]; // ASCII size
+    public static char firstNonRepeating(String str) {
+        int[] charCount = new int[256]; // ASCII size
 
-            for (int i = 0; i < str.length(); i++) {
-                charCount[str.charAt(i)]++;
-            }
-
-            for (int i = 0; i < str.length(); i++) {
-                if (charCount[str.charAt(i)] == 1) {
-                    return str.charAt(i);
-                }
-            }
-            return '\0'; // No non-repeating character
+        for (int i = 0; i < str.length(); i++) {
+            charCount[str.charAt(i)]++;
         }
 
-        public static void main(String[] args) {
-            System.out.println(firstNonRepeating("swiss")); // Output: w
+        for (int i = 0; i < str.length(); i++) {
+            if (charCount[str.charAt(i)] == 1) {
+                return str.charAt(i);
+            }
         }
+        return '\0'; // No non-repeating character
     }
+
+    public static void main(String[] args) {
+        System.out.println(firstNonRepeating("swiss")); // Output: w
+    }
+
 }

@@ -1,27 +1,21 @@
 package javaPractice.string;
 
 public class FindAllSubstringsOfString {
-    public void printAllSubstrings(String str) {
+    public static void printAllSubstrings(String str) {
+        String tmp = "";
         for (int i = 0; i < str.length(); i++) {
-            for (int j = i + 1; j <= str.length(); j++) {
-                System.out.println(str.substring(i, j));
+            for (int j = i ; j < str.length(); j++){
+                tmp = tmp + str.charAt(j);
+                System.out.println(tmp);
             }
         }
+//        for (int i =0; i < str.length(); i++){
+//            tmp =  str.charAt(i) + tmp;
+//        }
+//        System.out.println(tmp);
     }
-
-
-    public class Substrings {
-        public static void printSubstrings(String str) {
-            for (int i = 0; i < str.length(); i++) {
-                for (int j = i + 1; j <= str.length(); j++) {
-                    System.out.println(str.substring(i, j));
-                }
-            }
-        }
-
-        public static void main(String[] args) {
-            printSubstrings("abc");
-            // Output: a, ab, abc, b, bc, c
-        }
+    public static void main(String[] args) {
+        printAllSubstrings("abc");
+        // Output: a, ab, abc, b, bc, c
     }
 }

@@ -6,6 +6,7 @@ public class FindFirstRepeatingElement {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
                     return arr[i];
+
                 }
             }
         }

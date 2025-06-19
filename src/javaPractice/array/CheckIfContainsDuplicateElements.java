@@ -7,6 +7,7 @@ public class CheckIfContainsDuplicateElements {
                 if (arr[i] == arr[j]) {
                     return true;
                 }
+
             }
         }
         return false;

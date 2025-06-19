@@ -1,7 +1,7 @@
 package javaPractice.string;
 
 public class CheckIfTwoStringsAreAnagrams {
-    public boolean areAnagrams(String s1, String s2) {
+    public static boolean areAnagrams(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
         }
@@ -38,10 +38,9 @@ public class CheckIfTwoStringsAreAnagrams {
             }
             return true;
         }
-
-        public static void main(String[] args) {
-            System.out.println(areAnagrams("listen", "silent")); // Output: true
-            System.out.println(areAnagrams("hello", "world"));   // Output: false
-        }
+    }
+    public static void main(String[] args) {
+        System.out.println(CheckIfTwoStringsAreAnagrams.areAnagrams("listen", "silent")); // Output: true
+        System.out.println(CheckIfTwoStringsAreAnagrams.areAnagrams("hello", "world"));   // Output: false
     }
 }

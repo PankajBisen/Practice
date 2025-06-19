@@ -1,7 +1,7 @@
 package javaPractice.string;
 
 public class FindLongestPalindromicSubstring {
-    public String longestPalindrome(String str) {
+    public static String longestPalindrome(String str) {
         int start = 0, maxLength = 1;
 
         for (int i = 1; i < str.length(); i++) {
@@ -29,4 +29,7 @@ public class FindLongestPalindromicSubstring {
         return str.substring(start, start + maxLength);
     }
 
+    public static void main(String[] args) {
+        longestPalindrome("rqradarqe");
+    }
 }
